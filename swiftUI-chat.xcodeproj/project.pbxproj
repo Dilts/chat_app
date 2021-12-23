@@ -16,6 +16,8 @@
 		8698C3EC277513910011703C /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8698C3E8277513910011703C /* Montserrat-ExtraLight.ttf */; };
 		8698C3ED277513910011703C /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8698C3E9277513910011703C /* Montserrat-Bold.ttf */; };
 		8698C3EE277513910011703C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8698C3EA277513910011703C /* Montserrat-Regular.ttf */; };
+		8698C3F12775169B0011703C /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8698C3F02775169B0011703C /* CustomTabBar.swift */; };
+		8698C3F327751DEF0011703C /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8698C3F227751DEE0011703C /* TabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8698C3E8277513910011703C /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		8698C3E9277513910011703C /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		8698C3EA277513910011703C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		8698C3F02775169B0011703C /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		8698C3F227751DEE0011703C /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				8698C3D22774F64A0011703C /* HomeView.swift */,
+				8698C3EF277516830011703C /* Tab Bar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +135,15 @@
 				8698C3E7277513900011703C /* Montserrat-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8698C3EF277516830011703C /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				8698C3F02775169B0011703C /* CustomTabBar.swift */,
+				8698C3F227751DEE0011703C /* TabBarButton.swift */,
+			);
+			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8698C3F12775169B0011703C /* CustomTabBar.swift in Sources */,
 				8698C3D32774F64A0011703C /* HomeView.swift in Sources */,
 				8698C3E4277500380011703C /* Fonts.swift in Sources */,
+				8698C3F327751DEF0011703C /* TabBarButton.swift in Sources */,
 				8698C3D12774F64A0011703C /* swiftUI_chatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

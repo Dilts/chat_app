@@ -9,14 +9,18 @@ import SwiftUI
 
 struct HomeView: View {
     
-    let allFontNames = UIFont.familyNames
-      .flatMap { UIFont.fontNames(forFamilyName: $0) }
+    @State var selectedTab: Tabs = .contacts
     
     var body: some View {
-        List(allFontNames, id: \.self) { name in
-            Text(name)
-              .font(Font.custom(name, size: 12))
-          }
+        
+        VStack{
+            Text("hello")
+
+            Spacer()
+            
+            CustomTabBar(selectedTab: $selectedTab)
+        }
+        
     }
 }
 
