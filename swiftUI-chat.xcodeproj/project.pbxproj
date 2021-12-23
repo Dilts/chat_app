@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8698C3D12774F64A0011703C /* swiftUI_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8698C3D02774F64A0011703C /* swiftUI_chatApp.swift */; };
-		8698C3D32774F64A0011703C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8698C3D22774F64A0011703C /* ContentView.swift */; };
+		8698C3D32774F64A0011703C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8698C3D22774F64A0011703C /* HomeView.swift */; };
 		8698C3D52774F64F0011703C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8698C3D42774F64F0011703C /* Assets.xcassets */; };
 		8698C3D82774F64F0011703C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8698C3D72774F64F0011703C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		8698C3CD2774F64A0011703C /* swiftUI-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftUI-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8698C3D02774F64A0011703C /* swiftUI_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUI_chatApp.swift; sourceTree = "<group>"; };
-		8698C3D22774F64A0011703C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8698C3D22774F64A0011703C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8698C3D42774F64F0011703C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8698C3D72774F64F0011703C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,11 @@
 			isa = PBXGroup;
 			children = (
 				8698C3D02774F64A0011703C /* swiftUI_chatApp.swift */,
-				8698C3D22774F64A0011703C /* ContentView.swift */,
+				8698C3DE2774F6640011703C /* Views */,
+				8698C3DF2774F66F0011703C /* ViewModels */,
+				8698C3E02774F6830011703C /* Models */,
+				8698C3E12774F6900011703C /* Services */,
+				8698C3E22774F69E0011703C /* Helpers */,
 				8698C3D42774F64F0011703C /* Assets.xcassets */,
 				8698C3D62774F64F0011703C /* Preview Content */,
 			);
@@ -65,6 +69,42 @@
 				8698C3D72774F64F0011703C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8698C3DE2774F6640011703C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8698C3D22774F64A0011703C /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8698C3DF2774F66F0011703C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		8698C3E02774F6830011703C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8698C3E12774F6900011703C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8698C3E22774F69E0011703C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8698C3D32774F64A0011703C /* ContentView.swift in Sources */,
+				8698C3D32774F64A0011703C /* HomeView.swift in Sources */,
 				8698C3D12774F64A0011703C /* swiftUI_chatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
