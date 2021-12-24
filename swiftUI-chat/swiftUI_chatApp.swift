@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import gRPC_Core
 
 @main
 struct swiftUI_chatApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
