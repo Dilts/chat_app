@@ -39,7 +39,7 @@ struct CustomTabBar: View {
                         .scaledToFit()
                         .frame(width: 32, height: 32)
                     Text("Contacts")
-                        .font(Font.tabBar)
+                        .font(Font.tabBarCustom)
                 }
             }
             .tint(Color("icons-primary"))

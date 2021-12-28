@@ -11,6 +11,8 @@ struct HomeView: View {
     
     @State var selectedTab: Tabs = .contacts
     
+    @State var isOnboarded = !AuthViewModel.isUserLoggedIn()
+    
     var body: some View {
         
         VStack{
@@ -20,6 +22,12 @@ struct HomeView: View {
             
             CustomTabBar(selectedTab: $selectedTab)
         }
+        .fullScreenCover(isPresented: $isOnboarded) {
+            // On dismiss
+        } content: {
+            OnboardingContainer(isOnboarded: $isOnboarded)
+        }
+
         
     }
 }
